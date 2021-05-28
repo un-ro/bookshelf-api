@@ -1,0 +1,22 @@
+{
+  "name": "bookshelf-api",
+  "version": "1.0.0",
+  "description": "Dicoding Submission for Back-End Beginner Class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/un-ro/bookshelf-api.git"
+  },
+  "keywords": [
+    "node-js"
+  ],
+  "author": "un-ro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/un-ro/bookshelf-api/issues"
+  },
+  "homepage": "https://github.com/un-ro/bookshelf-api#readme"
+}
