@@ -2,9 +2,9 @@
   "name": "bookshelf-api",
   "version": "1.0.0",
   "description": "Dicoding Submission for Back-End Beginner Class",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/un-ro/bookshelf-api/issues"
   },
-  "homepage": "https://github.com/un-ro/bookshelf-api#readme"
+  "homepage": "https://github.com/un-ro/bookshelf-api#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.1.3",
+    "nanoid": "^3.1.23"
+  }
 }
