@@ -6,18 +6,19 @@ const getBooks = (request, h) => {
   let queryBook = books;
 
   if (name !== undefined) {
-    queryBook = queryBook.filter((item) => item.name.toLowercase().includes(name.toLowercase()));
+    queryBook = queryBook.filter((item) => item.name.toLowerCase().includes(name.toLowerCase()));
   }
 
+  // To convert int to boolean I refer to https://www.samanthaming.com/tidbits/19-2-ways-to-convert-to-boolean/
   if (reading !== undefined) {
-    queryBook = queryBook.filter((item) => item.reading === !!Number(reading));
+    queryBook = queryBook.filter((item) => item.reading === !!reading);
   }
 
   if (finished !== undefined) {
     queryBook = queryBook.filter((item) => item.finished === !!Number(finished));
   }
 
-  const response = h.response({
+  return h.response({
     status: 'success',
     data: {
       books: queryBook.map((book) => ({
@@ -26,8 +27,8 @@ const getBooks = (request, h) => {
         publisher: book.publisher,
       })),
     },
+    code: 200,
   });
-  response.code(200);
-  return response;
 };
+
 module.exports = getBooks;
