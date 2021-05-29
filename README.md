@@ -28,3 +28,6 @@
     - method: DELETE
     - url: /books/{booksId}
     - status_code: 404, 200
+
+## Result:
+![Bookshelf API Test provided by Dicoding](./git_asset/API_test.png)
