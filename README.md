@@ -1,5 +1,11 @@
 # Bookshelf API
 
+Want to use? Install it using this command: (Make sure you already installed nodejs and npm)
+```
+npm install
+npm run start
+```
+
 ## Dependencies:
 - Development:
     - Eslint (use AirBnB)
